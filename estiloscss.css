@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://bonstutoriais.com.br/wp-content/uploads/2018/04/curso-wordpress-850x478.jpg);
+  background-size: auto 100vh;
+  font-family: 'source code pro', monospace;
+  font-size: 10px;
+}
+/* se a tela tiver pelo menos 400px vai carregar esses estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+
+  @media (min-width: 800px) {
+  body {
+    font-size: 19px;
+  }
+
+}
+header {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-content: : center;
+}
+h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0 ;
+  z-index: 1;
+
+}
+
+a {
+  
+  text-decoration: none;
+}
+
+a:hover {
+  color: teal;
+  text-decoration: underline;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around
+}
+.menu li   {
+  list-style: none;
+}
+.menu a {
+  display: block;
+  padding: 10px 20px;
+
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 1s,color 2s;
+}
+
+.menu a:hover {
+ background-color: #0f0f0f0f ;
+  color: #755df5 ;
+}
+
+.titulo {
+  transform: scale(1.0) translatey(9vh);
+  opacity: 0.;
+  animation: linear 2s animacaotitulo infinte;
+
+}
+
+@keyframes animacaotitulo {
+  100% {
+     transform: scale(1.1) translatey(0vh);
+     opacity: 1;
+  }
+}
+.site-subtitle,
+.site-title {
+  text-align: center;
+  color: whitesmoke;
+}
+.site-title {
+  font-size: 4em;
+  font-family: 'Permanent Marker', cursive;
+}
+.site-subtitle {
+  font-style: italic;
+  font-family: 'press start 2p', cursive;
+  line-height: 1.5em;
+}
+.contato,
+section.RedesSociais {
+    
+    padding: 2em;
+    height: 100vh ;
+}
+.contato,
+section.RedesSociais h2 {
+  margin-bottom: 1em;
+}
+
+.grid {
+ display: grid;
+ gap: 1em;
+}
+
+@media (min-width: 540px) {
+  .grid {
+    grid-template-columns: 240px 240px;
+  }
+
+@media (min-width: 880px) {
+  .grid {
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+  }
+ 
+}
+.grid figure {
+ text-align: center;
+
+}
+
+.img-portfolio {
+  object-fit:cover;
+  object-position: left bottom;
+  width: 180px;
+}
+.img-portfolio:hover {
+  transform: scale(1.22) rotate(5deg);
+  transition:  1s;
+}
+
+.contato a {
+  color: black ;
+font-size: 2.5em ;
+transition: text-shadow 1s;
+}
+
+.contato i {
+  color:azure
+}
+.contato a:active,
+.contato a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255,255,255,10);
+}
+
+.contato a:active {
+
+  background-color:rgba(255,255,255,0);
+  color: rgb(26, 11, 250);
+ 
+}
